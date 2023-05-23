@@ -20,3 +20,32 @@ Exemplo de resposta:
 Caso receba OK! seus games serão listados
 ##### Falha na autenticação! 401
 Caso receba Falha na autenticação, significa que aconteceu um problema durante o processo de requisição. Motivos: Token inválido, Token expirado.
+
+### POST /auth
+Esse endpoint é responsável por fazer o processo de login.
+#### Parametros
+```
+{
+    "email": "davi@email.com",
+    "password": "nodejs<3" 
+}
+```
+#### Respostas 
+##### 200
+``` 
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImVtYWlsIjoiZGF2aUBlbWFpbC5jb20iLCJpYXQiOjE2ODQ4NzA2NDMsImV4cCI6MTY4NTA0MzQ0M30.3fgw5DVF00_w7LwXr7CavFop_5RuVJyvBo8_6oDzvuk"
+}
+```
+##### 401 Não autorizado
+```
+{
+    "err": "Senha invalida!"
+}
+```
+##### 404 Não encontrado
+```
+{
+    "err": "O E-mail enviado não existe na base de dados!"
+}
+```
