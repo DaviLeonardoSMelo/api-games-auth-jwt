@@ -31,19 +31,19 @@ Esse endpoint é responsável por fazer o processo de login.
 }
 ```
 #### Respostas 
-##### 200
+##### OK! 200
 ``` 
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImVtYWlsIjoiZGF2aUBlbWFpbC5jb20iLCJpYXQiOjE2ODQ4NzA2NDMsImV4cCI6MTY4NTA0MzQ0M30.3fgw5DVF00_w7LwXr7CavFop_5RuVJyvBo8_6oDzvuk"
 }
 ```
-##### 401 Não autorizado
+##### Não autorizado! 401
 ```
 {
     "err": "Senha invalida!"
 }
 ```
-##### 404 Não encontrado
+##### Não encontrado! 404
 ```
 {
     "err": "O E-mail enviado não existe na base de dados!"
