@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
 const jwt = require('jsonwebtoken')
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImVtYWlsIjoiZGF2aUBlbWFpbC5jb20iLCJpYXQiOjE2ODQ4Njk4MzgsImV4cCI6MTY4NTA0MjYzOH0.ejybhc2gTpPBJGJlzWSBJeBmg3mpEF32EB0-MMb7O1Q
+
 const JWTSecret = "asdfasdfasdfasdf"
 
 app.use(bodyParser.json())
