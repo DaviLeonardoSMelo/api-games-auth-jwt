@@ -43,9 +43,11 @@ Esse endpoint é responsável por fazer o processo de login.
     "err": "Senha invalida!"
 }
 ```
+Caso essa falha acontecça significa que a senha está incorreta ou inválida.
 ##### Não encontrado! 404
 ```
 {
     "err": "O E-mail enviado não existe na base de dados!"
 }
 ```
+Caso esse erro ocorra significa que o e-mail está incorreto ou inválido.
